@@ -105,7 +105,7 @@ Select	Cast(SUBSTRING(T.Col001,1,12) As VarChar(12)) As HICN,
 				  When SUBSTRING(T.Col001,354,1) = ' ' Then 'Not Applicable            '
 													   Else 'Unknown MSP Status Flag: '+SUBSTRING(T.Col001,354,1)
 			 End As VarChar(32)) As MSPStatus,
-		Cast(SUBSTRING(T.Col001,355,8) As VarChar(1)) As LowIncomePeriodendDate,
+		Cast(SUBSTRING(T.Col001,355,8) As VarChar(8)) As LowIncomePeriodendDate,
 		Cast(Case When SUBSTRING(T.Col001,363,1) = 'A' Then 'Approved SSA applicant'
 				  When SUBSTRING(T.Col001,363,1) = 'D' Then 'Deemed Eligible by CMS'
 				  When SUBSTRING(T.Col001,363,1) = ' ' Then 'Not Applicable        '
