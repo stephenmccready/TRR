@@ -69,7 +69,7 @@ CREATE TABLE [dbo].[tbl_TRR_Parsed](
 	[SecondaryRxPCN] [varchar](10) NULL,
 	[DeMinimisDiffAmt] [varchar](8) NULL,
 	[MSPStatus] [varchar](32) NULL,
-	[LowIncomePeriodendDate] [varchar](1) NULL,
+	[LowIncomePeriodendDate] [varchar](8) NULL,
 	[LISSource] [varchar](32) NULL,
 	[EnrolleeType] [varchar](32) NULL,
 	[ApplicationDateIndicator] [varchar](1) NULL,
